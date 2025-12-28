@@ -4,7 +4,7 @@ import json
 OLLAMA_URL = "http://localhost:11434"
 MODEL = "mistral"
 
-def ask_llm(prompt: str, timeout_s: int = 30000) -> str:
+def ask_llm(prompt: str, timeout_s: int = 3000) -> str:
     payload = {"model": MODEL, "prompt": prompt, "stream": False}
     try:
         r = requests.post(f"{OLLAMA_URL}/api/generate", json=payload, timeout=timeout_s)
@@ -29,11 +29,11 @@ def code_segment(segment: str, themes: list[str]) -> dict:
         "Retourne UNIQUEMENT un objet JSON valide, sans texte autour.\n"
         "Champs attendus:\n"
         '- "themes": liste de thèmes parmi la liste fournie\n'
-        '- "rationale": justification courte en français\n\n'
+        '- "justification": justification courte en français\n\n'
         f"Liste des thèmes autorisés: {themes}\n\n"
         f"Segment: {segment}\n"
     )
-    raw = ask_llm(prompt, timeout_s=30000).strip()
+    raw = ask_llm(prompt, timeout_s=3000).strip()
 
     # Si le modèle ajoute du texte, on tente d'extraire le JSON entre { ... }
     start = raw.find("{")

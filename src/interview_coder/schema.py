@@ -58,4 +58,12 @@ THEMES: List[Theme] = [
         name="Leviers et solutions",
         description="Propositions d'amélioration, pistes d'action."
     ),
+    Theme(
+        name="Qualité empéchée",
+        description="Manque de moyens pour faire un travail de qualité."
+    ),
+    Theme(
+        name="Neutre",
+        description="Pas de lien direct avec les situations de travail."
+    ),
 ]
