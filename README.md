@@ -9,13 +9,11 @@ It is designed for research and applied work in social and organizational psycho
 -   Python 3.10 or higher
 -   Git
 
-## Prerequisites
-
 ## Installation
 
 Clone the repository:
 
-\`\`\`bash git clone https://github.com/Tomasito64/Content-analysis-project.git cd Content-analysis-project
+git clone https://github.com/Tomasito64/Content-analysis-project.git cd Content-analysis-project
 
 python -m venv .venv call .venv\Scripts\activate.bat
 
@@ -32,7 +30,7 @@ Aucune donnée n’est envoyée vers un service externe.
      https://ollama.com
 
 2. Vérifier l’installation
-```bash
+
 ollama --version
 
 ollama pull mistral
@@ -42,4 +40,24 @@ http://localhost:11434
 
 # Project
 
-+---Content_analysis_project \| dependency_links.txt \| PKG-INFO \| requires.txt \| SOURCES.txt \| top_level.txt \| ---interview_coder \| aggregate.py \| coder.py \| llm_client.py \| schema.py \| segmenter.py \| **init**.py \| ---**pycache** coder.cpython-310.pyc schema.cpython-310.pyc segmenter.cpython-310.pyc **init**.cpython-310.pyc
++---Content_analysis_project.egg-info
+|       dependency_links.txt
+|       PKG-INFO
+|       requires.txt
+|       SOURCES.txt
+|       top_level.txt
+|
+\---interview_coder
+    |   aggregate.py
+    |   coder.py
+    |   llm_client.py
+    |   schema.py
+    |   segmenter.py
+    |   __init__.py
+    |
+    \---__pycache__
+            coder.cpython-310.pyc
+            llm_client.cpython-310.pyc
+            schema.cpython-310.pyc
+            segmenter.cpython-310.pyc
+            __init__.cpython-310.pyc
