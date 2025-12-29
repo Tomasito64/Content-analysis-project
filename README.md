@@ -1,3 +1,9 @@
+(\_/)
+( •_•)   
+/ >>    
+
+
+
 # Content Analysis Project
 
 This project provides a Python-based pipeline for qualitative content analysis of interview transcripts (French language).
